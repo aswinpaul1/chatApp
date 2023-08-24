@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp UI</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="chat-header">
+        <h1>Your Server</h1>
+      </div>
+      <div class="chat-contacts">
+        <!-- Login form here -->
+        <form id="login-form">
+          <label for="username">Enter your username:</label>
+          <input type="text" id="username" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+      <p>Online Users: <span id="userCount">0</span></p>
+    </aside>
+    <main class="chat">
+      <div class="chat-header">
+        <h2>Chat Room</h2>
+      </div>
+      <ul class="message-list" id="messages"></ul>
+      <form class="message-input" id="form" action="">
+        <input id="input" autocomplete="off" />
+        <button>Send</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

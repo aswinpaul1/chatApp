@@ -1,0 +1,96 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply some default styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+}
+
+/* Container for the entire app */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 25%;
+  background-color: #128C7E;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.chat-contacts {
+  /* Add styling for contact list if needed */
+}
+
+#userCount {
+  font-weight: bold;
+}
+
+/* Chat area styling */
+.chat {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f7f8fa;
+}
+
+.message-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  list-style-type: none;
+}
+
+/* Message styling */
+.message {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message-input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 20px;
+  background-color: #128C7E;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/* Additional styles as needed */
